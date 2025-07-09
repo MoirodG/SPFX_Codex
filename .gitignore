@@ -1,0 +1,6 @@
+node_modules/
+lib/
+dist/
+release/
+temp/
+*.scss.ts
