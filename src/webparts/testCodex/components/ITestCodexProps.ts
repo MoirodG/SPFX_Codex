@@ -4,4 +4,5 @@ export interface ITestCodexProps {
   environmentMessage: string;
   hasTeamsContext: boolean;
   userDisplayName: string;
+  listId: string;
 }

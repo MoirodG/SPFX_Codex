@@ -46,9 +46,16 @@ Short summary on functionality and used technologies.
 - Ensure that you are at the solution folder
 - in the command-line run:
   - **npm install**
+  - **gulp build** (optional for a production bundle)
   - **gulp serve**
 
+Ensure the `initialPage` setting in `config/serve.json` uses your tenant domain before running `gulp serve`.
+
 > Include any additional steps as needed.
+
+## Web part properties
+
+This sample exposes a `ListId` string property that you can configure in the property pane and reuse in your custom code.
 
 ## Features
 

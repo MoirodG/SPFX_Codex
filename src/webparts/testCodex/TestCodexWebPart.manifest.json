@@ -22,7 +22,8 @@
     "description": { "default": "Test_Codex description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "Test_Codex"
+      "description": "Test_Codex",
+      "listId": ""
     }
   }]
 }

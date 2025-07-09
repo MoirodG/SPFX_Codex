@@ -10,7 +10,8 @@ export default class TestCodex extends React.Component<ITestCodexProps> {
       isDarkTheme,
       environmentMessage,
       hasTeamsContext,
-      userDisplayName
+      userDisplayName,
+      listId
     } = this.props;
 
     return (
@@ -20,6 +21,7 @@ export default class TestCodex extends React.Component<ITestCodexProps> {
           <h2>Well done, {escape(userDisplayName)}!</h2>
           <div>{environmentMessage}</div>
           <div>Web part property value: <strong>{escape(description)}</strong></div>
+          <div>List Id: <strong>{escape(listId)}</strong></div>
         </div>
         <div>
           <h3>Welcome to SharePoint Framework!</h3>

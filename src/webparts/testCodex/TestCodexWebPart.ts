@@ -14,6 +14,7 @@ import { ITestCodexProps } from './components/ITestCodexProps';
 
 export interface ITestCodexWebPartProps {
   description: string;
+  listId: string;
 }
 
 export default class TestCodexWebPart extends BaseClientSideWebPart<ITestCodexWebPartProps> {
@@ -26,6 +27,7 @@ export default class TestCodexWebPart extends BaseClientSideWebPart<ITestCodexWe
       TestCodex,
       {
         description: this.properties.description,
+        listId: this.properties.listId,
         isDarkTheme: this._isDarkTheme,
         environmentMessage: this._environmentMessage,
         hasTeamsContext: !!this.context.sdks.microsoftTeams,
@@ -110,6 +112,9 @@ export default class TestCodexWebPart extends BaseClientSideWebPart<ITestCodexWe
               groupFields: [
                 PropertyPaneTextField('description', {
                   label: strings.DescriptionFieldLabel
+                }),
+                PropertyPaneTextField('listId', {
+                  label: strings.ListIdFieldLabel
                 })
               ]
             }
